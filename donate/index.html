@@ -14,53 +14,59 @@
   <body>
 
     <!-- Initial Nav -->
-    <!-- todo copy nav from homepage -->
-     <nav id="nav">
-      <a href="../index.html" class="logo" title="ICYCF"></a>
+    <nav id="nav">
+      <a href="" class="logo" title="ICYCF"></a>
       <ul class="no-bullet inline-list right">
-        <li><a href="../" class="" title="Learn More">Learn More</a></li>
-        <li><a href="../donate/index.html" class="button small" title="Donate"><strong>Donate</strong></a></li>
+        <li><a href="../about-us/index.html" class="" title="About Us">About Us</a></li>
+        <li><a href="../index.html#learn-more" class="learn-more" title="Learn More">Learn More</a></li>
+        <li><a href="" class="button small radius right" title="Donate"><strong>Donate</strong></a></li>
       </ul>
     </nav>
 
     <!-- Sticky Nav -->
     <nav id="sticky-nav" class="">
-      <a href="../index.html" class="logo" title="ICYCF"></a>
-      <a href="../donate/index.html" class="button small" title="Donate"><strong>Donate</strong></a>
+      <a href="../index.html" class="logo left" title="ICYCF"></a>
+      <a href="" class="right button radius small" title="Donate"><strong>Donate</strong></a>
     </nav>
 
     <!-- Hero section -->
-    <section class="hero margin-bottom-2">
+    <!-- Hero section -->
+    <section class="hero-donate margin-bottom-2">
       <div class="row intro">
         <div class="small-centered medium-uncentered medium-6 large-7 columns">
-          <h1>Inner City Youth<br> Charitable Foundation</h1>
-          <p id="us-statement">Our programs connect youth to mentors who serve as role models for careers, family life, and community service. Our mentorship programs focus on improving academic functioning, experiencing the value of work, expanding awareness and appreciation of self, others, and the environment beyond their home and neighborhood situations.</p>
+          <h1>Donate</h1>
+          <p id="us-statement">Volunteer as a mentor or make a donation today!</p>
         </div>
       </div>
     </section>
 
-    <!--3 Sections -->
     <div class="row centered">
-      <div class="small-4 small-centered large-uncentered columns">
-        <h4>Students</h4>
-        <p>The 2016 ICYCF Scholarship is now available for high school seniors. Apply online today!</p>
-        <a href="http://goo.gl/forms/1i6G2V9qka" class="small secondary radius button">Apply</a><br/>
-      </div>
-      <div class="small-4 small-centered large-uncentered columns">
-        <h4>Mentors</h4>
-        <p>Influencing others for good is one of the most rewarding things in this world. Learn how to become a mentor below.</p>
-        <a href="#" class="small secondary radius button" data-reveal-id="mentorModal">Become a Mentor</a><br/>
-        <div id="mentorModal" class="reveal-modal" data-reveal aria-labelledby="Mentors" aria-hidden="true" role="dialog">
-          <h2 id="modalTitle">Becoming an ICYCF Mentor</h2>
-          <p class="lead">Influencing others for good is one of the most rewarding things in this world. Todo more quick information about the mentor program or who people will be mentoring or what the process is to become one.</p>
-          <p>To find out more about becoming a mentor or referring someone to become a mentor, please contact Rachel at <a href="mailto:someone@example.com?Subject=Becoming a mentor for ICYCF" target="_top">todo@mail.com</a></p>
+      <div class="small-6 small-centered columns text-center">
+        <h4 class="">Donate</h4>
+        <p class="">Because of your generous support, we were able to launch our mentorship and scholarship program for 11 youth in Chicago in 2015. The program was a strong success and we are asking for your help to continue and expand the program in 2016. We are grateful for your overwhelmingly positive response to the changes we made to the Inner City Youth programs last year. Thank you for enabling the mission of ICYCF to continue and progress.</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" id="donate_form" method="post">
+          <input name="cmd" type="hidden" value="_s-xclick">
+          <input name="hosted_button_id" type="hidden" value="1955942">
+          <input alt="" border="0" name="submit" src="https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif" type="image">
+          <img alt="" border="0" height="1" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" data-pin-nopin="true">
+        </form>
+        <p>or<br>
+        <a href="#" class="" data-reveal-id="donateMailModal" title="Donate by mail">Donate by mail</a><br/></p>
+        <div id="donateMailModal" class="reveal-modal text-center" data-reveal aria-labelledby="Mentors" aria-hidden="true" role="dialog">
+          <h2 id="">Donate by Mail</h2>
+          <p class="lead">Donations by check can be sent to:</p>
+          <p>ICYCF c/o Michelle Fish<br>
+            5046 N. Melvina Ave. <br>
+            Chicago, IL 60630<br>
+          </p>
           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
         </div>
       </div>
-      <div class="small-4 small-centered large-uncentered columns">
-        <h4>Donate</h4>
-        <p>Help support the education and mentorship of the rising generation by making a donation today!</p>
-        <a href="http://icycf.blogspot.com/p/support-usdonors.html" class="small secondary radius button">Donate</a><br/>
+    </div>
+
+    <div class="row centered">
+      <div class="small-8 small-centered columns">
+
       </div>
     </div>
 
