@@ -25,6 +25,9 @@ nav #nav {
   z-index: 2;
 }
 
+#nav a {
+  color: white;
+}
 #nav ul {
   margin: 0;
   padding: 0;
@@ -36,10 +39,14 @@ nav #nav {
   float: left;
   display: block;
   margin: 0 10px;
-  text-transform: uppercase;
+/*  text-transform: uppercase;*/
   font-size: 14px;
-  cursor: pointer;
+  /*cursor: pointer;*/
   line-height: 50px;
+}
+
+#nav ul li button {
+  text-transform: uppercase;
 }
 
 #nav .logo {
@@ -74,10 +81,11 @@ nav #nav {
 #stricky-nav .logo {
   float: left;
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   background-image: url('../img/logo-icycf.jpg');
   background-size: 100% auto;
+  background-color: white;
 }
 
 #sticky-nav .donate-btn {
@@ -128,6 +136,7 @@ nav #nav {
   background-size: cover;
   height: 100vh; 
 }
+
 .hero:before {
   content: '';
   position: absolute;
@@ -135,26 +144,29 @@ nav #nav {
   right: 0;
   bottom: 0;
   left: 0;
-  /* todo change the gradient to be blue gray for education */
   background-image: linear-gradient(to bottom right, #F89A1C, #056CB6);
   opacity: .8; }
 .hero .intro {
   padding: 3rem;
   position: relative;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%); 
+}
+
 .hero h1 {
   color: #fff;
   font-size: 1.5rem;
-  line-height: 1.5em;
-  letter-spacing: -0.025em;
-  font-weight: 300;
-  text-align: left; }
+  line-height: 1.25;
+  font-weight: 400;
+  text-align: left;
+}
+
 .hero p {
   color: #fff;
   line-height: 1.75em;
   font-weight: 200;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem; 
+}
 .hero .hero-img {
   background: url("../img/education-2-unsplash.jpg") no-repeat center center;
   background-size: cover;
@@ -162,30 +174,47 @@ nav #nav {
   width: 9rem;
   border-radius: 50%;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto; 
+}
 @media only screen and (min-width: 40.063em) {
   .hero .hero-img {
     height: 18rem;
-    width: 18rem; }
+    width: 18rem; 
+  }
   .hero h1 {
     padding-top: 4.5rem;
     text-align: left;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
   .hero p {
     text-align: left;
-    } 
+  } 
 }
 
 
 /******** Footer *********/
 footer {
   background-color: #eee;
-  
+
 }
 
 footer .row {
   margin-bottom: 0em;
   padding: 2em 0em 2em;
+}
+
+footer a {
+  color: #999999;
+}
+
+footer a:hover {
+  color: #056cb6;
+  
+}
+
+footer a i{
+  padding-right: 5px;
 }
 
 /******* Custom for Foundation 5 *********/
@@ -194,4 +223,7 @@ footer .row {
 }
 .margin-bottom-2 {
   margin-bottom: 2em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', Arial, sans-serif;
 }

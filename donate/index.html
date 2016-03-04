@@ -4,29 +4,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Commecting youth to mentors who serve as role models for careers, family life, and community service.">
-    <title>ICYCF | Inner City Youth Charitable Foundation</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/icycf.css" />
+    <title>Donate | ICYCF | Inner City Youth Charitable Foundation</title>
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <link rel="stylesheet" href="../css/icycf.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="js/vendor/modernizr.js"></script>
+    <script src="../js/vendor/modernizr.js"></script>
 
   </head>
   <body>
 
     <!-- Initial Nav -->
-    <nav id="nav">
-      <a href="" class="logo" title="ICYCF"></a>
+    <!-- todo copy nav from homepage -->
+     <nav id="nav">
+      <a href="../index.html" class="logo" title="ICYCF"></a>
       <ul class="no-bullet inline-list right">
-        <li><a href="../icycf/about-us/index.html" class="" title="About Us">About Us</a></li>
-        <li><a href="#learn-more" class="learn-more" title="Learn More">Learn More</a></li>
-        <li><a href="../icycf/donate/index.html" class="button small" title="Donate"><strong>Donate</strong></a></li>
+        <li><a href="../" class="" title="Learn More">Learn More</a></li>
+        <li><a href="../donate/index.html" class="button small" title="Donate"><strong>Donate</strong></a></li>
       </ul>
     </nav>
 
     <!-- Sticky Nav -->
     <nav id="sticky-nav" class="">
-      <a href="" class="logo" title="ICYCF"></a>
-      <a href="/donate" class="button small" title="Donate"><strong>Donate</strong></a>
+      <a href="../index.html" class="logo" title="ICYCF"></a>
+      <a href="../donate/index.html" class="button small" title="Donate"><strong>Donate</strong></a>
     </nav>
 
     <!-- Hero section -->
@@ -40,11 +40,11 @@
     </section>
 
     <!--3 Sections -->
-    <div class="row centered" id="learn-more">
+    <div class="row centered">
       <div class="small-4 small-centered large-uncentered columns">
         <h4>Students</h4>
         <p>The 2016 ICYCF Scholarship is now available for high school seniors. Apply online today!</p>
-        <a href="http://goo.gl/forms/1i6G2V9qka" class="small secondary radius button" title="Apply Now">Apply Now</a><br/>
+        <a href="http://goo.gl/forms/1i6G2V9qka" class="small secondary radius button">Apply</a><br/>
       </div>
       <div class="small-4 small-centered large-uncentered columns">
         <h4>Mentors</h4>
@@ -64,6 +64,7 @@
       </div>
     </div>
 
+    <!-- TODO get footer from home index.html -->
     <footer>
       <div class="row centered">
         <div class="small-8 small-centered large-uncentered columns">
@@ -83,10 +84,9 @@
       </div>
     </footer>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script src="js/vendor/jquery.waypoints-v2.0.5.js"></script>
-    <script src="js/vendor/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/jquery.waypoints-v2.0.5.js"></script>
+    <script src="../js/foundation.min.js"></script>
     <script>
       $(document).foundation();
 
@@ -98,15 +98,6 @@
           $('#sticky-nav').removeClass('show');
         }
       }, {offset: 120});
-
-      // Scroll to learn more section 
-      $('.learn-more').click(function () {
-        $.scrollTo('#learn-more', 500, {
-          offset: -80
-        });
-        return false;
-      });
-
     </script>
   </body>
 </html>

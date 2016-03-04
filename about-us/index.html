@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Commecting youth to mentors who serve as role models for careers, family life, and community service.">
+    <title>About Us | ICYCF | Inner City Youth Charitable Foundation</title>
+    <link rel="stylesheet" href="../css/foundation.css" />
+    <link rel="stylesheet" href="../css/icycf.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="../js/vendor/modernizr.js"></script>
+
+  </head>
+  <body>
+
+    <!-- Initial Nav -->
+    <!-- todo copy nav from homepage -->
+    <nav id="nav">
+      <a href="../index.html" class="logo" title="ICYCF"></a>
+      <ul class="no-bullet inline-list right">
+        <li><a href="../" class="" title="Learn More">Learn More</a></li>
+        <li><a href="../donate/index.html" class="button small" title="Donate"><strong>Donate</strong></a></li>
+      </ul>
+    </nav>
+
+    <!-- Sticky Nav -->
+    <nav id="sticky-nav" class="">
+      <a href="../index.html" class="logo" title="ICYCF"></a>
+      <a href="../donate/index.html" class="button small" title="Donate"><strong>Donate</strong></a>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero margin-bottom-2">
+      <div class="row intro">
+        <div class="small-centered medium-uncentered medium-6 large-7 columns">
+          <h1>About Us</h1>
+          <p id="us-statement">Our programs connect youth to mentors who serve as role models for careers, family life, and community service. </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="row centered">
+      <div class="small-8 small-centered large-uncentered columns">
+        <h4>Our Vision</h4>
+        <p>Our vision is to nurture the small seeds of hope within each youth with whom we work. Many of
+          them have the kind of hope that is only a vague feeling of wanting to live a different and better
+          life. Others have exciting, detailed dreams which they hope to realize, but do not have the
+          necessary tools and resources.</p>
+        <p>By linking inner city youth with positive role models, educating them on the available resources
+          and opportunities, and providing access to funding for college scholarships, we believe that these
+          seeds of hope can grow, flourish and lead to a renewed life, free of many of the burdens they
+          carry today.</p>
+      </div>
+    </div>
+    <div class="row centered">
+      <div class="small-8 small-centered large-uncentered columns">
+        <h4>Our Mission</h4>
+        <p>Our purpose is to motivate and support inner city
+          youth to prepare for and obtain higher education. Our programs connect youth to mentors who
+          serve as role models for careers, family life, and community service. Our mentorship programs
+          focus on improving academic functioning, experiencing the value of work, expanding awareness
+          and appreciation of self, others, and the environment beyond their home and neighborhood
+          situations. Those who successfully complete our mentorship programs are eligible for college
+          scholarships at participating universities.
+        </p>
+      </div>
+    </div>
+
+    <!-- TODO get footer from home index.html -->
+    <footer>
+      <div class="row centered">
+        <div class="small-8 small-centered large-uncentered columns">
+          <p class="left">©2016 ICYCF</p>
+        </div>
+        <div class="small-2 small-centered large-uncentered columns">
+          <ul class="no-bullet">
+            <li><a href="" title="Contact Us">Contact Us</a></li>
+            <li><a href="" title="Frequenty Asked Questions">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="small-2 small-centered large-uncentered columns">
+          <p>Follow Us</p>
+          <a href="https://www.facebook.com/icycfpage/" title="Follow ICYCF on Facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <a href="https://twitter.com/icycf" title="Follow ICYCF on Twitter"><i class="fa fa-twitter-square fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/vendor/jquery.waypoints-v2.0.5.js"></script>
+    <script src="../js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+
+      // Show persistent nav when scrolled to grid-women section and down
+      $('#us-statement').waypoint(function (direction) {
+        if (direction === "down") {
+          $('#sticky-nav').addClass('show');
+        } else if (direction === "up") {
+          $('#sticky-nav').removeClass('show');
+        }
+      }, {offset: 120});
+    </script>
+  </body>
+</html>
