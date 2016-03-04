@@ -2352,7 +2352,8 @@ meta.foundation-mq-topbar {
     display: block;
     float: left;
     list-style: none;
-    margin-left: 1.375rem; }
+    margin-left: 1.375rem;
+    }
     .inline-list > li > * {
       display: block; }
 
@@ -3863,7 +3864,8 @@ ol {
 
 .no-bullet {
   list-style-type: none;
-  margin-left: 0; }
+  margin-left: 0;
+  }
   .no-bullet li ul,
   .no-bullet li ol {
     margin-left: 1.25rem;

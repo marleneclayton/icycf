@@ -130,7 +130,13 @@ nav #nav {
 
 /******** Hero Section *******/
 .hero {
-  background: url("../img/education-2-unsplash.jpg") no-repeat center center;
+  /*background: url("../img/education-2-unsplash.jpg") no-repeat center center;*/
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.01), 
+    rgba(0, 0, 0, 0.8)
+    ),
+    url("../img/education-2-unsplash.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh; 
 }
@@ -142,7 +148,34 @@ nav #nav {
 }
 
 .hero-donate {
-  background: url("../img/education-2-unsplash.jpg") no-repeat center center;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.01), 
+    rgba(0, 0, 0, 0.8)
+    ),
+    url("../img/education-2-unsplash.jpg") no-repeat center center;
+  background-size: cover;
+  height: 60vh; 
+}
+
+.hero-mentor {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.01), 
+    rgba(0, 0, 0, 0.8)
+    ),
+    url("../img/mentoring.jpg") no-repeat center center;
+  background-size: cover;
+  height: 60vh; 
+}
+
+.hero-student {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.01), 
+    rgba(0, 0, 0, 0.8)
+    ),
+    url("../img/writing.jpg") no-repeat center center;
   background-size: cover;
   height: 60vh; 
 }
@@ -210,7 +243,7 @@ nav #nav {
 /******** Footer *********/
 footer {
   background-color: #404042;
-color: #eee;
+  color: #eee;
 }
 
 footer .row {
@@ -223,8 +256,8 @@ footer a {
 }
 
 footer a:hover {
-  /*color: #056cb6;*/
-
+  color: #fff;
+  transition: 300ms ease-out;
 }
 
 footer a i{
@@ -245,8 +278,15 @@ h1, h2, h3, h4, h5, h6 {
 .button {
   background-color: #05AAEE;
   border-color: none;
+  font-weight: 600;
 }
 
 button:hover, button:focus, .button:hover, .button:focus {
   background-color: #048fc8;
+}
+.hero .no-bullet {
+  margin-left: 0;
+}
+.hero .inline-list > li:first-child {
+  margin-left: 0rem;
 }
