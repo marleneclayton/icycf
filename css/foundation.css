@@ -3765,9 +3765,9 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-    color: #6f6f6f;
     font-size: 60%;
-    line-height: 0; }
+    line-height: 0;
+    }
 
 h1 {
   font-size: 2.125rem; }

@@ -50,14 +50,16 @@
       </div>
     </div>
 
-    <footer>
+  <footer>
       <div class="row centered">
         <div class="small-8 small-centered large-uncentered columns">
-          <p class="left">©2016 ICYCF</p>
+          <h4 class="left"><small>©2016 ICYCF<br>ICYCF is a registered a 501(c)(3) nonprofit and can accept matching gifts through most giving sites.</small></h4>
+          <h4 class="left"><small><a href="" title="Terms & Conditions">Terms & Conditions</a> &middot; <a href="" title="Privacy Policy">Privacy Policy</a></small></h4>
         </div>
         <div class="small-2 small-centered large-uncentered columns">
           <ul class="no-bullet">
-            <li><a href="" title="Contact Us">Contact Us</a></li>
+            <li><a href="http://icycf.blogspot.com/" target="_blank" title="Blog">Blog</a></li>
+            <li><a href="about-us/index.html#contact-us" title="Contact Us">Contact Us</a></li>
             <li><a href="" title="Frequenty Asked Questions">FAQ</a></li>
           </ul>
         </div>
@@ -76,14 +78,14 @@
     <script>
       $(document).foundation();
 
-      // Show persistent nav when scrolled to grid-women section and down
-      $('#us-statement').waypoint(function (direction) {
-        if (direction === "down") {
-          $('#sticky-nav').addClass('show');
-        } else if (direction === "up") {
-          $('#sticky-nav').removeClass('show');
-        }
-      }, {offset: 120});
+      // Show persistent nav when you scroll down
+//      $('#us-statement').waypoint(function (direction) {
+//        if (direction === "down") {
+//          $('#sticky-nav').addClass('show');
+//        } else if (direction === "up") {
+//          $('#sticky-nav').removeClass('show');
+//        }
+//      }, {offset: 120});
 
       // Scroll to learn more section 
       $('.learn-more').click(function () {
