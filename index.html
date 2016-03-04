@@ -18,7 +18,7 @@
     <nav id="nav">
       <a href="index.html" class="logo" title="ICYCF"></a>
       <ul class="no-bullet inline-list right">
-        <li><a href="applications/student-application.html" class="" title="Students">Student</a></li>
+        <li><a href="applications/student-application.html" class="" title="Students">Students</a></li>
         <li><a href="applications/mentor-application.html" class="" title="Mentors">Mentors</a></li>
         <li><a href="about-us/index.html" class="" title="About Us">About Us</a></li>
         <li><a href="about-us/index.html#learn-more" class="learn-more" title="Learn More">Learn More</a></li>
@@ -28,7 +28,7 @@
 
     <!-- Sticky Nav -->
     <nav id="sticky-nav" class="">
-      <a href="index.html" class="logo left" title="ICYCF"></a>
+      <a href="index.html" class="logo" title="ICYCF"></a>
       <a href="donate/index.html" class="right success button radius small" title="Donate"><strong>Donate</strong></a>
     </nav>
 
@@ -37,7 +37,7 @@
       <div class="row intro">
         <div class="small-centered medium-uncentered medium-6 large-7 columns">
           <h1>Inner City Youth<br> Charitable Foundation</h1>
-          <p id="us-statement">We connect inner city youth with mentors who sill help them succeed. Todo</p>
+          <p id="us-statement">We connect inner city youth with mentors who will help them succeed. Todo</p>
           <ul class="no-bullet inline-list">
             <li><a href="#learn-more" class="button small radius learn-more secondary" title="Learn More"><strong>Learn More</strong></a></li> 
             <li><a href="../icycf/donate/index.html" class="button small radius success" title="Donate"><strong>Donate</strong></a></li> 
@@ -56,17 +56,6 @@
       </div>
     </div>
 
-    <!-- Testimonial -->
-    <!--    <div class="row centered margin-bottom-2">
-          <div class="small-4 columns">
-            <div class="image-cropper">
-              <img class="image-cropper__image" src="img/student-walking.jpg">
-            </div>
-          </div>
-          <div class="small-8 columns">
-            <blockquote>TODO This is a sample quote from a student who has been personally affected by the ICYCF programs.<cite>Richard Harris</cite></blockquote>
-          </div>
-        </div>-->
 
     <!--3 Sections -->
     <div class="row centered">
@@ -101,8 +90,8 @@
         <div class="small-2 small-centered large-uncentered columns">
           <ul class="no-bullet">
             <li><a href="http://icycf.blogspot.com/" target="_blank" title="Blog">Blog</a></li>
-            <li><a href="contact-us.html" title="Contact Us">Contact Us</a></li>
-            <li><a href="" title="Frequenty Asked Questions">FAQ</a></li>
+            <li><a href="about-us/index.html#contact-us" title="Contact Us">Contact Us</a></li>
+            <!--<li><a href="" title="Frequenty Asked Questions">FAQ</a></li>-->
           </ul>
         </div>
         <div class="small-2 small-centered large-uncentered columns">
@@ -120,7 +109,7 @@
     <script>
       $(document).foundation();
 
-      // Show persistent nav when scrolled to grid-women section and down
+      // Show persistent nav when scrolled to main info section
       $('#us-statement').waypoint(function (direction) {
         if (direction === "down") {
           $('#sticky-nav').addClass('show');

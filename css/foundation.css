@@ -90,7 +90,8 @@ img {
   max-width: none !important; }
 
 .left {
-  float: left !important; }
+  float: left !important;
+  }
 
 .right {
   float: right !important; }
@@ -3728,7 +3729,8 @@ td {
 a {
   color: #008CBA;
   line-height: inherit;
-  text-decoration: none; }
+  text-decoration: none;
+  }
   a:hover, a:focus {
     color: #0078a0; }
   a img {
